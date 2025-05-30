@@ -1,0 +1,63 @@
+/*General styling */
+body {
+    margin: 0;
+    font-family: 'Arimo';
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #F7F2DE;
+}
+
+h2 {
+  font-size: 36px;
+  font-family:'Arimo';
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 28px;
+  text-align: center;
+  font-family:'Arimo'; 
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+  font-family:'Frank Ruhl Libre'; 
+  font-weight: lighter;
+}
+
+/* Top of page */
+nav {
+  display: flex;
+  height: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  color: white;
+  background: #F7F2DE;
+}
+
+.logo {
+  font-size: 200px;
+  font-family:'Frank Ruhl Libre'; 
+  font-weight: lighter;
+  margin: 0;
+}
+
+.background {
+  background-image: url('https://images.unsplash.com/photo-1713244649594-0c2de54f2eaa?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=markus-spiske-WcLzVLbUP5g-unsplash.jpg');
+background-size: cover;
+background-size: 100%;
+width: 100%;
+background-repeat: no-repeat;
+height: 700px;
+border: 0.5px solid;
+border-color: black;
+}
