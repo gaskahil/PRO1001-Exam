@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <header>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Shop Locally</title>
+        <link rel="stylesheet" href="visuals.css">
+        <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </header>
+    <body>
+        <nav>
+          <a href="menu">Menu</a>
+          <a href="skeleton.html">FRAM</a>
+          <a href="cart">Cart</a>
+        </nav>
+        <section class="introProduce">
+            <h3 class="h3Produce">PRODUCE</h3>
+            <p class="produceText">Explore our selection of seasonal produce, sourced directly from<br> local farms to ensure peak freshness and quality. Every item is<br>chosen with care, supporting sustainable practices and bringing the best of the harvest to your table</p>
+        </section> <!--/introProduce-->
+        <section class="produceOverview">
+            <div class="product">
+                <img src="productPageImg/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg" alt="closeup picture of Oats" class="productImg">
+                    <div class="prize">
+                    <p>Oats</p>
+                    <p>16 kr / kg</p>
+                </div><!--/prize-->
+                <p>1 kg</p>
+            </div> <!--/product-->
+            <div class="product">
+                <img src="productPageImg/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg" alt="closeup picture of Red onions" class="productImg">
+                    <div class="prize">
+                    <p>Red Onions</p>
+                    <p>45 kr / kg</p>
+                </div><!--/prize-->
+                <p>1 kg</p>
+            </div><!--/product-->
+            <div class="product">
+                <img src="productPageImg/matthew-pilachowski-w1eAFyBLhLM-unsplash.jpg" alt="closeup picture of Garlic" class="productImg">
+                    <div class="prize">
+                    <p>Garlic</p>
+                    <p>38 kr</p>
+                </div><!--/prize-->
+                <p>0.2 kg</p>
+            </div><!--/product-->
+            </section><!--/produceOverview-->
+            <section class="produceOverview">
+            <div class="product">
+                <img src="productPageImg/rodrigo-dos-reis-h3AkzboxK4Q-unsplash.jpg" alt="closeup picture of Potatoes" class="productImg">
+                    <div class="prize">
+                    <p>Potatoes</p>
+                    <p>48 kr</p>
+                </div><!--/prize-->
+                <p>1 kg</p>
+            </div><!--/product-->
+            <div class="product">
+                <img src="productPageImg/goh-rhy-yan-wUBhu3GXIg0-unsplash.jpg" alt="closeup picture of Carrots" class="productImg">
+                    <div class="prize">
+                    <p>Carrots</p>
+                    <p>48 kr</p>
+                </div><!--/prize-->
+                <p>Gård</p>
+            </div><!--/product-->
+        </section><!--/produceOverview-->
+        <section class="partnerFarmHeadline">
+            <h3>SEE OUR PARTNERING<br>FARMS</h3>
+        </section><!--/partnerFarmHeadline-->
+        <section class="mapRoom" id="mapRoom">
+            <div class="mapAPI" id="mapAPI">
+
+            </div>
+        </section>
+    </body>
+    <footer>
+        <h2 class="footerLogo">FRAM</h2>
+        <hr class="footerLine">
+        <section class="footerInfo">
+            <h3 class="footerHeading">STAY UPDATED</h3>
+            <p class="footerText">Sign up for our newsletter to be the first<br> to know about new produce or other<br> exciting news!</p>
+        </section><!--/footerInfo-->
+        <section class="join"></section>
+        <!--Form Content-->
+        <form id="sub">
+            <input 
+            type="text"
+            id="firstName"
+            name="fornavn"
+            placeholder="First Name"
+            minlength="2"
+            required
+            >
+            <input
+            type="email"
+            id="email"
+            placeholder="E-mail adress"
+            minlength="3"
+            required
+            >
+            <button class="subscribeBtn" id="subscribeBtn">Send</button>
+        </form>
+        </section><!--/join-->
+    </footer>
+</html>

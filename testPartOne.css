@@ -1,0 +1,68 @@
+nav {
+  display: flex;
+  height: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+  background: #F7F2DE;
+  border-bottom: 1px solid;
+  border-color: #0B0A08;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.mainMenu {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.side-panel-toggle {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+
+    background-color: #F7F2DE;
+    color:#0B0A08;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+/*Hovering on menu adds opacity effect*/
+.side-panel-toggle:hover {
+    opacity: 40%;
+}
+
+/*Hiding close icon when menu is not open*/
+.sp-icon-close {
+    display: none !important;
+}
+
+.side-panel {
+    display: none;
+    width: 200px;
+    flex-shrink: 0;
+    padding: 20px;
+    color:#0B0A08;
+    background-color: #008F51;
+}
+
+.side-panel-open .side-panel {
+  display: initial;
+}
+
+/*Hiding one icon while the other one is visible*/
+.side-panel-open .sp-icon-open {
+  display: none !important;
+}
+
+.side-panel-open .sp-icon-close {
+  display: initial !important;
+}

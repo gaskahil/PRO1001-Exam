@@ -38,15 +38,21 @@ h6 {
   font-weight: lighter;
 }
 
+/*For Panel Menu*/
+
+
+
 /* Section 1 */
 nav {
   display: flex;
   height: 15px;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px;
+  padding: 10px;
   color: white;
   background: #F7F2DE;
+  border-bottom: 1px solid;
+  border-color: #0B0A08;
 }
 
 /*Fram Logo*/
@@ -59,7 +65,7 @@ nav {
 
 /*Background image*/
 .background {
-  background-image: url('https://images.unsplash.com/photo-1713244649594-0c2de54f2eaa?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=markus-spiske-WcLzVLbUP5g-unsplash.jpg');
+  background-image: url('landingPageImg/mountainview_markus_spiske.jpg');
 background-size: cover;
 background-size: 100%;
 width: 100%;
@@ -99,7 +105,7 @@ align-items: stretch;
 }
 
 /*Button settings*/
-button {
+.browseBtn {
   width: 320px;
   height: 45px;
   background: #DC4131;
@@ -108,10 +114,23 @@ button {
   border: 0;
 }
 
-button:hover {
+.browseBtn:hover {
   background: #AE2E21;
 }
 
+.chatBtn {
+  width: 320px;
+  height: 45px;
+  background: #DC4131;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: 0;
+}
+
+.chatBtn:hover {
+  background: #AE2E21;
+}
+/*Ask section*/
 .ask {
   display: flex;
   flex-direction: column;
@@ -172,13 +191,17 @@ button:hover {
   display: flex;
   padding-bottom: 90px;
   flex-direction: row;
-  overflow-y: scroll; /*In case the image size is a bit to big for the vindow, added a scrolling menu*/
+  overflow-y: scroll; 
+  /*added a scrolling menu in case needed*/
 }
 
 /*Images for produce products*/
 .productImg {
   border-radius: 30px;
   padding: 14.5px;
+  width: 455px; 
+  height: 432px; 
+  object-fit: cover;
 }
 
 /*Prize element for produce*/
@@ -186,6 +209,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   padding: 14.5px;
+  color:#0B0A08;
 }
 
 footer {
@@ -195,19 +219,30 @@ footer {
 
 /*FRAM logo*/
 .footerLogo {
-  padding-left: 45px;
-  padding-bottom: 32px;
+  padding-left: 25%;
+  padding: 0 32px;
+  font-weight: 100;
 }
 
 /*Decor line*/
 .footerLine {
-  width: 90%;
+  width: 95%;
 }
 
+/*Headline in Footer*/
+.footerHeading {
+  font-size: 28px;
+  text-align: left;
+  padding: 45px;
+  margin-left: 25%;
+  font-family:'Arimo'; 
+  font-weight: 100;
+}
 /*Newsletter info*/
 .footerText {
   display: flex;
   justify-content: center;
+  padding-bottom: 45px;
 }
 
 /*Subscription form*/
@@ -219,6 +254,7 @@ form {
     margin: auto;
 }
 
+/*Input fields in footer*/
 input {
   margin-bottom: 12px;
   border-color: #FFFFFF;
@@ -226,10 +262,43 @@ input {
   padding: 7px;
 }
 
+/*subscribe Button in footer*/
 .subscribeBtn {
   margin-top: 12px;
-  padding: 6px;
   border-radius: 5px;
+  padding: 5px;
   border-color: #E1EAF0;
   background: #E1EAF0;
+}
+
+
+/*Produce Page*/
+
+.h3Produce {
+  color: #0B0A08;
+}
+
+.produceText {
+  color:#0B0A08;
+}
+
+.product {
+  color: #0B0A08;
+}
+
+/*Flexbox for Produce*/
+.produceOverview {
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+
+.partnerFarmHeadline{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #0B0A08;
+  color:#0B0A08;
+  margin: auto;
+  width: 100%;
+  padding: 45px 0;
 }
