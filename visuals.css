@@ -38,7 +38,7 @@ h6 {
   font-weight: lighter;
 }
 
-/* Top of page */
+/* Section 1 */
 nav {
   display: flex;
   height: 15px;
@@ -49,6 +49,7 @@ nav {
   background: #F7F2DE;
 }
 
+/*Fram Logo*/
 .logo {
   font-size: 200px;
   font-family:'Frank Ruhl Libre'; 
@@ -56,6 +57,7 @@ nav {
   margin: 0;
 }
 
+/*Background image*/
 .background {
   background-image: url('https://images.unsplash.com/photo-1713244649594-0c2de54f2eaa?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=markus-spiske-WcLzVLbUP5g-unsplash.jpg');
 background-size: cover;
@@ -127,7 +129,7 @@ button:hover {
   align-items: center;
   color: #0B0A08;
   border: 0.5px solid;
-  boder-color: black;
+  border-color: black;
   height: 785px;
 }
 
@@ -138,7 +140,7 @@ button:hover {
 
 .orderInfo {
   border: 0.5px solid;
-  boder-color: black;
+  border-color: black;
   display: flex;
   align-items: center;
   height: 197px;
@@ -147,4 +149,87 @@ button:hover {
 
 .testHelp {
   margin-left: 188px;
+}
+
+/*Section 4*/
+.popularProduce {
+  background: #FFFFFF;
+  padding-top: 90px;
+  color: #0B0A08;
+}
+
+/*Heading for section 4*/
+.h3Popular {
+  font-weight: 100;
+  display: flex;
+  padding-left: 45px;
+}
+
+/*Section element for different produce options*/
+.popularOptions {
+  padding: 45px;
+  padding-left: 30.5px;
+  display: flex;
+  padding-bottom: 90px;
+  flex-direction: row;
+  overflow-y: scroll; /*In case the image size is a bit to big for the vindow, added a scrolling menu*/
+}
+
+/*Images for produce products*/
+.productImg {
+  border-radius: 30px;
+  padding: 14.5px;
+}
+
+/*Prize element for produce*/
+.prize {
+  display: flex;
+  justify-content: space-between;
+  padding: 14.5px;
+}
+
+footer {
+  padding-top: 32px;
+  background: #DC4131;
+}
+
+/*FRAM logo*/
+.footerLogo {
+  padding-left: 45px;
+  padding-bottom: 32px;
+}
+
+/*Decor line*/
+.footerLine {
+  width: 90%;
+}
+
+/*Newsletter info*/
+.footerText {
+  display: flex;
+  justify-content: center;
+}
+
+/*Subscription form*/
+form {
+    display: flex;
+    flex-direction: column;
+    padding:45px;
+    width: 50%;
+    margin: auto;
+}
+
+input {
+  margin-bottom: 12px;
+  border-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.subscribeBtn {
+  margin-top: 12px;
+  padding: 6px;
+  border-radius: 5px;
+  border-color: #E1EAF0;
+  background: #E1EAF0;
 }
