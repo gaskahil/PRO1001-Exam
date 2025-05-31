@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>homedelivery from your local farms</title>
         <link rel="stylesheet" href="visuals.css">
+        <!--icons for menu-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--fonts for the project-->
         <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -12,9 +14,34 @@
     <body>
         <!--Section 1 -->
         <nav>
-          <a href="menu">Menu</a>
-          <a href="#top">FRAM</a>
-          <a href="cart">Cart</a>
+            <ul>
+                <li>
+                    <div class="wrapper side-panel-open">
+                        <div class="mainMenu">
+                        </div> <!--/mainMenu-->
+                        <button class="side-panel-toggle" id="toggleBtn" type="button">
+                        <span class="material-icons sp-icon-open">menu</span>
+                        <span class="material-icons sp-icon-close">close</span>
+                        </button>
+                    <div class="side-panel">
+                        <hr class="menuBar">
+                        <div class="menuChoice">
+                            <a href="shop.html" class="menuOptions">PRODUCTS</a>
+                            <a href="" class="menuOptions">CHAT</a>
+                        </div><!--/menuChoice-->
+                        <div class="bottomMenu">
+                            <p>CHECKOUT</p>
+                        </div><!--/bottomMenu-->
+                    </div><!--/side-panel-->
+                    </div> <!--/wrapper-->
+                </li>
+                <li>
+                    <a>FRAM</a>
+                </li>
+                <li>
+                    <a>Cart</a>
+                </li>
+            </ul>
         </nav>
     <div class="background">
         <section class="top" id="top">
@@ -97,6 +124,7 @@
             </section><!--/garlic-->
         </section><!--/popularOptions-->
     </section><!--/popularProduce-->
+    <script src="testPartOne.js"></script> 
     </body>
     <footer>
         <h2 class="footerLogo">FRAM</h2>

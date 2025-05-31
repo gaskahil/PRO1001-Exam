@@ -38,21 +38,124 @@ h6 {
   font-weight: lighter;
 }
 
-/*For Panel Menu*/
-
-
-
 /* Section 1 */
 nav {
-  display: flex;
   height: 15px;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
+  padding: 15px;
   color: white;
   background: #F7F2DE;
   border-bottom: 1px solid;
   border-color: #0B0A08;
+}
+
+/*lock elements to the Nav bar*/
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 0;
+  padding: 0;
+  justify-items: center;
+}
+
+/*Removing default decor that comes with Unordered Lists*/
+ul {
+  list-style-type: none;
+}
+
+/*Remove the default underline*/
+.menuOptions {
+  text-decoration: none;
+}
+
+/*Adding underline on hover*/
+.menuOptions:hover {
+  text-decoration: underline;
+}
+
+/*Placement of NAV options*/
+nav ul li {
+  width: 90%;
+  text-align: center;
+}
+
+a {
+  color: #0B0A08;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.mainMenu {
+    flex-grow: 1;
+    padding: 0;
+}
+
+.side-panel-toggle {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+
+    background-color: #F7F2DE;
+    color:#0B0A08;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 0;
+    float: left;
+}
+
+/*Menu adjustments*/
+.menuBar {
+  border: 1px solid #0B0A08;
+  border-top: 0;
+  margin: 15px -20px;
+}
+
+.menuChoice {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+  padding-top: 80%;
+  margin-bottom: 180%;
+}
+
+/*Hovering on menu adds opacity effect*/
+.side-panel-toggle:hover {
+    opacity: 40%;
+}
+
+/*Hiding close icon when menu is not open*/
+.sp-icon-close {
+    display: none !important;
+}
+
+/*Panel settings*/
+.side-panel {
+    display: none;
+    width: 200px;
+    flex-shrink: 0;
+    padding: 20px;
+    color:#0B0A08;
+    background-color: #008F51;
+    float: left;
+}
+
+.side-panel-open .side-panel {
+  display: initial;
+}
+
+/*Hiding one icon while the other one is visible*/
+.side-panel-open .sp-icon-open {
+  display: none !important;
+}
+
+.side-panel-open .sp-icon-close {
+  display: initial !important;
 }
 
 /*Fram Logo*/
@@ -61,6 +164,7 @@ nav {
   font-family:'Frank Ruhl Libre'; 
   font-weight: lighter;
   margin: 0;
+  padding-left: 50%;
 }
 
 /*Background image*/
