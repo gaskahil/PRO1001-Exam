@@ -68,7 +68,6 @@ border-color: black;
 }
 
 /*Section 2*/
-/*Section 2*/
 
 .options {
   display: flex;
@@ -119,4 +118,33 @@ button:hover {
   border-color: black;
   padding: 90px;
   margin: 0;
+}
+
+/*Section 3*/
+
+.info{
+  display: flex;
+  align-items: center;
+  color: #0B0A08;
+  border: 0.5px solid;
+  boder-color: black;
+  height: 785px;
+}
+
+.h5Flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderInfo {
+  border: 0.5px solid;
+  boder-color: black;
+  display: flex;
+  align-items: center;
+  height: 197px;
+  padding: 0px 90px;
+}
+
+.testHelp {
+  margin-left: 188px;
 }
