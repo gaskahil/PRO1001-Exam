@@ -5,7 +5,7 @@ Tasks remaining:
 - clicking outside the menu closes it
 - have logo and following text correctly placed
 - line between logo and text
-- "add to basket" button on all produce images
+- "add to basket" button on main page
 - remove a border line that has appeared in the "ORDER GROCERIES" tab
 - resize the pixels for THIS IS HOW IT WORKS up to 788px
 - API map
