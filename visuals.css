@@ -187,7 +187,7 @@ background-size: cover;
 background-size: 100%;
 width: 100%;
 background-repeat: no-repeat;
-height: 700px;
+height: auto;
 border: 0.5px solid;
 border-color: black;
 }
@@ -225,7 +225,7 @@ align-items: stretch;
 .chatBtn:hover {
   background: #AE2E21;
 }
-/*Ask section*/
+/*shop and ask section*/
 .shop, .ask {
   display: flex;
   flex-direction: column;
