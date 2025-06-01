@@ -87,6 +87,13 @@ a {
   color: #0B0A08;
 }
 
+.cart {
+  background-color:#008F51;
+  padding: 7px;
+  width: 10px;
+  border-radius: 20px;
+}
+
 .wrapper {
     height: 100vh;
     position: absolute;

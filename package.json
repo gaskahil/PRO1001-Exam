@@ -1,0 +1,23 @@
+{
+  "name": "pro1001-exam",
+  "version": "1.0.0",
+  "description": "Part of this project has been to divy it up in to more managable chunks.",
+  "main": "chatbot.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaskahil/PRO1001-Exam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaskahil/PRO1001-Exam/issues"
+  },
+  "homepage": "https://github.com/gaskahil/PRO1001-Exam#readme"
+
+
+}

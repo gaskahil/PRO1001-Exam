@@ -39,30 +39,26 @@
                     <a>FRAM</a>
                 </li>
                 <li>
-                    <a>Cart</a>
+                    <a class="cart">0</a>
                 </li>
             </ul>
         </nav>
     <section>
         <div class="chatbot-container">
-        <div id="chatbot">
-            <div id="conversation">
-              <div class="chatbot-message">
-                <p class="chatbot-text">What can I help you with today?</p>
-              </div><!--chatbot-message-->
-            </div><!--/conversation-->
-            <form id="input-form">
-              <message-container>
-                <input id="input-field" type="text">
-                <button id="submit-button" type="submit">
-                  <span class="material-symbols-outlined">arrow_upward</span>
-                </button>
-              </message-container>
-                
-            </form>
-        </div>  <!--/chatbot-->
-    </div>
+        <ul class="chatbox">
+            <li class="chat-incoming chat, chatbot-message">
+              <h6>FRAM</h6>
+                <p>Hey! How can I assist you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea></textarea>
+            <button id="chat-input button">
+              <span class="material-symbols-outlined">arrow_upward</span>
+            </button>
+        </div><!--/chatBot-->
+    </div><!--/chatbot-container-->
     </section>
-    <script src="chatbot.js"></script> 
+    <script type="module" src="chatbot.js"></script> 
 </body>
 </html>
