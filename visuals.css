@@ -5,6 +5,10 @@ body {
     font-size: 16px;
     color: #FFFFFF;
     background: #F7F2DE;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -42,6 +46,7 @@ h6 {
 nav {
   height: 15px;
   padding: 15px;
+  width: 100%;
   color: white;
   background: #F7F2DE;
   border-bottom: 1px solid;
@@ -84,6 +89,8 @@ a {
 
 .wrapper {
     height: 100vh;
+    position: absolute;
+    z-index: 1000;
 }
 
 .mainMenu {
@@ -115,6 +122,7 @@ a {
   margin: 15px -20px;
 }
 
+/*Content of menu, adjustments*/
 .menuChoice {
   display: flex;
   align-items: center;
@@ -272,7 +280,7 @@ align-items: stretch;
   color: #0B0A08;
   border: 0.5px solid;
   border-color: #0B0A08;
-  height: 788px;
+  height: 785px;
 }
 
 .h5Flex {

@@ -19,12 +19,11 @@ inputForm.addEventListener('submit', function(event) {
 
   // Clear input field
   inputField.value = '';
-  const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit" });
 
   // Add user input to conversation
   let message = document.createElement('div');
   message.classList.add('chatbot-message', 'user-message');
-  message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${input}</p>`;
+  message.innerHTML = `<p class="chatbot-text"">${input}</p>`;
   conversation.appendChild(message);
 
   // Generate chatbot response
@@ -33,7 +32,7 @@ inputForm.addEventListener('submit', function(event) {
   // Add chatbot response to conversation
   message = document.createElement('div');
   message.classList.add('chatbot-message','chatbot');
-  message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${response}</p>`;
+  message.innerHTML = `<p class="chatbot-text"">${response}</p>`;
   conversation.appendChild(message);
   message.scrollIntoView({behavior: "smooth"});
 });

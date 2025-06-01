@@ -8,13 +8,15 @@ body {
     display: flex;
     flex-direction: column; 
     min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* NAV BAR */
 nav {
   height: 15px;
   padding: 15px;
-  width: 100vw;
+  width: 100%;
   color: white;
   background: #F7F2DE;
   border-bottom: 1px solid;
@@ -138,8 +140,8 @@ a {
 .chatbot-container {
     background-color: #FFFFFF;
     border: 1px solid #0B0A08;
-    width: 100vw;
-    height: 100vh; 
+    width: 100%;
+    height: 100%; 
     padding-bottom: 0;
     margin-right:0;
   }
@@ -201,21 +203,31 @@ a {
     padding: 15px;
     border-radius: 20px;
   }
+
+.user-text {
+    background-color: #e1eaf0;
+    color: #0B0A08;
+    font-size: 1.1em;
+    padding: 15px;
+    border-radius: 20px;
+}
   
   #input-form {
     display: flex;
     align-items: center;
+    padding: 0 20px;
   }
   
   #input-field {
     flex: 1;
-    height: 60px;
+    height: 44px;
     border-radius: 20px;
     padding: 0 15px;
     font-size: 16px;
     background: #e1eaf0;
     color: #0B0A08;
     border: none;
+    margin-bottom: 20px;
   }
 
   .send-icon {
@@ -229,8 +241,13 @@ a {
   }
   
   #submit-button {
-    background-color: transparent;
+    background-color: #DC4131;
+    color: #FFFFFF;
+    border-radius: 20px;
+    height: 44px;
+    width: 60px;
     border: none;
+    margin-bottom: 20px;
   }
 
   p[sentTime]:hover::after {    
