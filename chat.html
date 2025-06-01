@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="chatStyle.css">
+    <!--icons for menu-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--fonts for the project-->
+    <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+            <ul>
+                <li>
+                    <div class="wrapper">
+                        <div class="mainMenu">
+                        </div> <!--/mainMenu-->
+                        <button class="side-panel-toggle" id="toggleBtn" type="button">
+                        <span class="material-icons sp-icon-open">menu</span>
+                        <span class="material-icons sp-icon-close">close</span>
+                        </button>
+                    <div class="side-panel">
+                        <hr class="menuBar">
+                        <div class="menuChoice">
+                            <a href="shop.html" class="menuOptions">PRODUCTS</a>
+                            <a href="" class="menuOptions">CHAT</a>
+                        </div><!--/menuChoice-->
+                        <div class="bottomMenu">
+                            <p>CHECKOUT</p>
+                        </div><!--/bottomMenu-->
+                    </div><!--/side-panel-->
+                    </div> <!--/wrapper-->
+                </li>
+                <li>
+                    <a>FRAM</a>
+                </li>
+                <li>
+                    <a>Cart</a>
+                </li>
+            </ul>
+        </nav>
+    <section>
+        <div class="chatbot-container">
+        <div id="chatbot">
+            <div id="conversation">
+              <div class="chatbot-message">
+                <p class="chatbot-text">What can I help you with today?</p>
+              </div><!--chatbot-message-->
+            </div><!--/conversation-->
+            <form id="input-form">
+              <message-container>
+                <input id="input-field" type="text">
+                <button id="submit-button" type="submit">
+                  <span class="material-symbols-outlined">arrow_upward</span>
+                </button>
+              </message-container>
+                
+            </form>
+        </div>  <!--/chatbot-->
+    </div>
+    </section>
+    <script src="testPartOne.js"></script> 
+</body>
+</html>
