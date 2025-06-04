@@ -1,3 +1,10 @@
+SETUP:
+Before testing the chatbot, make sure you open the script folder and chatbot.js file. At the top of the js file, you can update where the OpenAI is imported from, and your API key.
+
+
+
+
+
 Part of this project has been to divy it up in to more managable chunks.
 
 Tasks remaining:
