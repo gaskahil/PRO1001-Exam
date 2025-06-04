@@ -1,3 +1,25 @@
+.h3Produce {
+  color: #0B0A08;
+}
+
+.produceText {
+  color:#0B0A08;
+}
+
+.introProduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+/*Flexbox for Produce*/
+.produceOverview {
+  display: flex;
+  flex-direction: row;
+}
+
 .partnerFarms {
   display: flex;
   flex-direction: row;
@@ -11,10 +33,24 @@
   padding: 45px 0;
 }
 
+.partnerFarms h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 600px) {
   .partnerFarms {
     flex-direction: column;
     align-items: center;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .partnerLine {
+    display: none;
   }
 
   .mapRoom {
@@ -22,8 +58,33 @@
     border-top: 1px solid;
     padding-top: 25px;
   }
+
+  .produceOverview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    overflow-y: visible;
+  }
+  .productImg {
+    max-width: 300px;
+    max-height: 280px;
+    object-fit: cover;
+  }
+  .prize {
+  display: flex;
+  justify-content: space-between;
+  color:#0B0A08;
+}
 }
 
+.prize {
+  display: flex;
+  justify-content: space-between;
+  padding: 14.5px;
+  color:#0B0A08;
+}
 
 .map, .mapPlaceholder {
     width: 100%;
