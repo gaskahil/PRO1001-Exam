@@ -1,12 +1,15 @@
+// REPLACE apiKEY info with your own API key
+import OpenAI from "https://esm.sh/openai";
+
+//Declare apiKey 
+const openai = new OpenAI({
+    apiKey: "YOUR_API_KEY"
+});
+
 //open or close the menu panel
 document.querySelector(".side-panel-toggle").addEventListener("click", () => {
   document.querySelector(".wrapper").classList.toggle("side-panel-open");
 });
-
-//chatBot
-import OpenAI from "https://esm.sh/openai";
-
-//Declare apiKey 
 
 
 //Declare constant elements
