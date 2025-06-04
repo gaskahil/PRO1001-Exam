@@ -34,34 +34,6 @@ I do enjoy being able to compare my work and see how things look, but to avoid h
 [MDN Webdocs](https://developer.mozilla.org/en-US/) For helpful solutions to problems. <br/>
 [W3Schools](https://www.w3schools.com/) Helpful guide to look for options to my problems. <br/>
 
-## Challenges faced
-### MAP API
-One of my biggest challenges, was the map function. For most of the time while I worked on other elements on the page, I had nothing there besides an empty div in the **html**. I decided to make this part of the Javascript for the map, to test making placeholder information. 
-```
-function showMapPlaceholder() {
-  const mapDiv = document.getElementById('map');
-  mapDiv.innerHTML = `
-    <img src="mapPin.png"
-         alt="Map unavailable"
-         class="mapPlaceholder" />  `;
-}
-```
-To keep the task of creating the map easier for me, it currently only has one map marker, placed on the same farm used in the project file on Figma. 
-
-### Panel Menu
-Even though the tutorial linked in my External resources was of great help with the initial setup, the setup created an element that didn't really want to be placed in the top left corner. This became my rescue, allowing me to specify a locked area where it could also be placed over the NAV bar. 
-```
-position: absolute;
-```
-To then decide the order of what elements would be placed over other elements, z-index allowed me to adjust order as wanted. I probably did not need to go to such a high number, but for the few elements I needed to order, I aimed high and could add increments of one whenever a different element had placement priority. 
-```
-z-index: 1103;
-```
-
-### Pixel Count
-During my time working on this exam, I've had the PDF easily available to add padding, margin, size and other elements, doing my best to adhere to the size requirements. Some of the measurements provided does not give the result showcased in the PDF. In the *This is how it works* section, it is supposed to be 785 px in height, but the four elements on the right side, each require 197 pixels in height. 197 x 4 is 788 pixels, and with more time, I would like to change this so things line up correctly. I tried changing the pixel height from 785 to 788, but that did not solve the problem.
-
-
 ## Future Improvements
 To make these pages function better in the future, I would add Javascript code that adds produce to the basket indicated in the top right on the navigation bar. I would also make it so the Navigation bar would either be locked at the top of the screen at all times, or easy to call on with hover or a quick scroll up. <br/>
 Another feature I think should be implemented for a project like this is an option to select your location, which will, based on the selected location the user chooses, gives them options of produce to pick from. 
