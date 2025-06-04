@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     </header>
     <body>
+        <!--kanskje legge inn en header her?-->
         <nav>
             <ul>
                 <li>
@@ -42,6 +43,8 @@
                 </li>
             </ul>
         </nav>
+        <!-- slutt på header her-->
+    <main> <!--la inn en main for å gjøre siden litt mer semantisk riktig.-->
         <section class="introProduce">
             <h3 class="h3Produce">PRODUCE</h3>
             <p class="produceText">Explore our selection of seasonal produce, sourced directly from<br> local farms to ensure peak freshness and quality. Every item is<br>chosen with care, supporting sustainable practices and bringing the best of the harvest to your table</p>
@@ -118,8 +121,8 @@
 
             </div>
         </section>
-        <script src="mainJavascript.js"></script> 
-    </body>
+        
+   </main> <!-- her er slutten på main-->
     <footer>
         <h2 class="footerLogo">FRAM</h2>
         <hr class="footerLine">
@@ -149,4 +152,6 @@
         </form>
         </section><!--/join-->
     </footer>
+    <script src="mainJavascript.js"></script> <!--flyttet scriptet for  å hjelpe DOM order-->
+ </body> <!-- flyttet end of body her for å være litt mer semantisk riktig-->
 </html>
