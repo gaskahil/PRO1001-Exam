@@ -480,3 +480,6 @@ input {
   width: 100%;
   padding: 45px 0;
 }
+
+/* klare å fine comments som viser til hva og hvor css styler, kanskje bryte ned css filen inn i små filer for hver enkel emne?*/
+/*for eksempel en css fil for produce-page en for footer osv. Det er fine å klare comments men mye kodelinjer å gå igjennom. */
