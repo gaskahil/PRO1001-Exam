@@ -6,12 +6,6 @@ const openai = new OpenAI({
     apiKey: "YOUR_API_KEY"
 });
 
-//open or close the menu panel
-document.querySelector(".side-panel-toggle").addEventListener("click", () => {
-  document.querySelector(".wrapper").classList.toggle("side-panel-open");
-});
-
-
 //Declare constant elements
 const chatInput = document.querySelector('.chat-input textarea');
 const sendChatBtn = document.querySelector('.chat-input button');
