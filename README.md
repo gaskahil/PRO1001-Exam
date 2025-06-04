@@ -6,6 +6,11 @@ External resources:
 dilate.com 
 Gave me a nice push for how to start setting up the google maps API
 
+README.md styling:
+https://ellen-park.medium.com/comprehensive-guide-to-styling-a-github-readme-2df7a6db1a00
+
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
 
 Part of this project has been to divy it up in to more managable chunks.
 

@@ -42,137 +42,6 @@ h6 {
   font-weight: lighter;
 }
 
-/* Section 1 */
-nav {
-  height: 15px;
-  padding: 15px;
-  width: 100%;
-  color: white;
-  background: #F7F2DE;
-  border-bottom: 1px solid;
-  border-color: #0B0A08;
-}
-
-/*lock elements to the Nav bar*/
-nav ul {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  margin: 0;
-  padding: 0;
-  justify-items: center;
-}
-
-/*Removing default decor that comes with Unordered Lists*/
-ul {
-  list-style-type: none;
-}
-
-/*Remove the default underline*/
-.menuOptions {
-  text-decoration: none;
-}
-
-/*Adding underline on hover*/
-.menuOptions:hover {
-  text-decoration: underline;
-}
-
-/*Placement of NAV options*/
-nav ul li {
-  width: 90%;
-  text-align: center;
-}
-
-a {
-  color: #0B0A08;
-}
-
-.cart {
-  background-color:#008F51;
-  padding: 7px;
-  width: 10px;
-  border-radius: 20px;
-}
-
-.wrapper {
-    height: 100vh;
-    position: absolute;
-    z-index: 1000;
-}
-
-.mainMenu {
-    flex-grow: 1;
-    padding: 0;
-}
-
-.side-panel-toggle {
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: flex-start;
-
-    background-color: #F7F2DE;
-    color:#0B0A08;
-    border: none;
-    outline: none;
-    padding: 0;
-    margin-left: 0;
-    margin-top: 0;
-    float: left;
-}
-
-/*Menu adjustments*/
-.menuBar {
-  border: 1px solid #0B0A08;
-  border-top: 0;
-  margin: 15px -20px;
-}
-
-/*Content of menu, adjustments*/
-.menuChoice {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 15px;
-  padding-top: 80%;
-  margin-bottom: 180%;
-}
-
-/*Hovering on menu adds opacity effect*/
-.side-panel-toggle:hover {
-    opacity: 40%;
-}
-
-/*Hiding close icon when menu is not open*/
-.sp-icon-close {
-    display: none !important;
-}
-
-/*Panel settings*/
-.side-panel {
-    display: none;
-    width: 200px;
-    flex-shrink: 0;
-    padding: 20px;
-    color:#0B0A08;
-    background-color: #008F51;
-    float: left;
-}
-
-.side-panel-open .side-panel {
-  display: initial;
-}
-
-/*Hiding one icon while the other one is visible*/
-.side-panel-open .sp-icon-open {
-  display: none !important;
-}
-
-.side-panel-open .sp-icon-close {
-  display: initial !important;
-}
-
 /*Locking the text at the top of the page*/
 .top {
   display: flex;
@@ -395,8 +264,7 @@ footer {
 
 /*FRAM logo*/
 .footerLogo {
-  padding-left: 25%;
-  padding: 0 32px;
+  padding: 0 40px;
   font-weight: 100;
 }
 
@@ -409,25 +277,40 @@ footer {
 .footerHeading {
   font-size: 28px;
   text-align: left;
-  padding: 45px;
-  margin-left: 25%;
+  padding: 45px 20px;
+  margin-left: 25px;
   font-family:'Arimo'; 
   font-weight: 100;
 }
 /*Newsletter info*/
 .footerText {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 45px;
+  padding-bottom: 25px;
+  padding-left: 0;
+  white-space: normal;
+  margin-left: 45px;
 }
 
 /*Subscription form*/
-form {
+.join {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+form {
     padding:45px;
     width: 50%;
-    margin: auto;
+    margin: auto 0 0 0;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+    padding: 20px;
+  }
+  
 }
 
 /*Input fields in footer*/
@@ -436,6 +319,7 @@ input {
   border-color: #FFFFFF;
   border-radius: 5px;
   padding: 7px;
+  width: 60%;
 }
 
 /*subscribe Button in footer*/
@@ -447,28 +331,10 @@ input {
   background: #E1EAF0;
 }
 
-
-/*Produce Page*/
-
-.h3Produce {
-  color: #0B0A08;
-}
-
-.produceText {
-  color:#0B0A08;
-}
-
 /*Setting color for the text + locking the images to allow buttons over*/
 .product {
   color: #0B0A08;
   position: relative;
-}
-
-/*Flexbox for Produce*/
-.produceOverview {
-  display: flex;
-  flex-direction: row;
-  overflow-y: scroll;
 }
 
 .partnerFarmHeadline{
