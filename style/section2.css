@@ -1,0 +1,71 @@
+/*Section 2*/
+
+.options {
+  display: flex;
+align-items: stretch;
+  background: #FFFFFF;
+  color: #0B0A08;
+  border: 0.5px solid;
+  border-color: black;
+}
+
+/*basket and farmer image*/
+.basket, .farmer {
+  width: 448px; 
+  height: 327px; 
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/*Button settings*/
+.browseBtn, .chatBtn {
+  width: 320px;
+  height: 45px;
+  background: #DC4131;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: 0;
+}
+
+.browseBtn:hover {
+  background: #AE2E21;
+}
+
+.chatBtn:hover {
+  background: #AE2E21;
+}
+/*shop and ask section*/
+.shop, .ask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.5px solid;
+  border-color: black;
+  padding-top: 90px;
+  padding-bottom:90px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*.shop and .ask for mobile*/
+
+@media (max-width: 600px) {
+      .shop, .ask {
+    width: 100%;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .options { /* Replace with actual parent container if needed */
+    display: flex;
+    flex-direction: column;
+  }
+  .basket, .farmer {
+  width: 350px; 
+  height: 250px; 
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 45px 0;
+}
+}

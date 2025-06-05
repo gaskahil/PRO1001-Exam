@@ -1,0 +1,62 @@
+/*Locking the text at the top of the page*/
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*Fram Logo*/
+.logo {
+  font-size: 200px;
+  font-family:'Frank Ruhl Libre'; 
+  font-weight: lighter;
+  margin: 0;
+}
+
+.vertical {
+  border-left: 1px solid #FFFFFF;
+  height: 100px;
+}
+
+/*Background image*/
+.background {
+  background-image: url('../landingPageImg/mountainview_markus_spiske.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  border: 0.5px solid black;
+}
+
+/*.top, logo, .vertical, .background*/
+@media (max-width: 600px) {
+  .top {
+    justify-content: flex-start;
+    align-items: center; 
+    padding-top: 24px;
+    height: auto;
+  }
+
+  .logo {
+    font-size: 80px;
+    font-weight: 100;
+  }
+
+  .vertical {
+    height: 250px;
+  }
+
+  .top h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-family: 'Arimo';
+    font-weight: 100;
+  }
+  .background {
+    min-height: 600px;
+  }
+}

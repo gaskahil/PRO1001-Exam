@@ -1,4 +1,11 @@
-/*Add to basket element over each product image*/
+#product {
+  position: relative;
+}
+
+.product {
+  position: relative;
+}
+
 .addToCartBtn {
   display: flex;
   justify-content: center;
@@ -8,7 +15,7 @@
   border-radius: 20px;
   padding-top: 5px;
   position: absolute;
-  bottom: 167px;
-  right: 35px;
+  bottom: 160px;
+  right: 35px;  
   border: none;
 }

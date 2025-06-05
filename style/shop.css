@@ -68,9 +68,10 @@
     overflow-y: visible;
   }
   .productImg {
-    max-width: 300px;
-    max-height: 280px;
+    height: 280px;
+    width: 300px;;
     object-fit: cover;
+    border-radius: 20px;
   }
   .prize {
   display: flex;

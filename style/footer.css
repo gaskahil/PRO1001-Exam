@@ -1,0 +1,74 @@
+
+footer {
+  padding-top: 32px;
+  background: #DC4131;
+}
+
+/*FRAM logo*/
+.footerLogo {
+  padding: 0 40px;
+  font-weight: 100;
+}
+
+/*Decor line*/
+.footerLine {
+  width: 95%;
+}
+
+/*Headline in Footer*/
+.footerHeading {
+  font-size: 28px;
+  text-align: left;
+  padding: 45px 20px;
+  margin-left: 25px;
+  font-family:'Arimo'; 
+  font-weight: 100;
+}
+/*Newsletter info*/
+.footerText {
+  padding-bottom: 25px;
+  padding-left: 0;
+  white-space: normal;
+  margin-left: 45px;
+}
+
+/*Subscription form*/
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+form {
+    padding:45px;
+    width: 50%;
+    margin: auto 0 0 0;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+    padding: 20px;
+  }
+  
+}
+
+/*Input fields in footer*/
+input {
+  margin-bottom: 12px;
+  border-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 7px;
+  width: 60%;
+}
+
+/*subscribe Button in footer*/
+.subscribeBtn {
+  margin-top: 12px;
+  border-radius: 5px;
+  padding: 5px;
+  border-color: #E1EAF0;
+  background: #E1EAF0;
+}
