@@ -66,14 +66,13 @@ h6 {
 
 /*Background image*/
 .background {
-  background-image: url('landingPageImg/mountainview_markus_spiske.jpg');
-background-size: cover;
-background-size: 100%;
-width: 100%;
-background-repeat: no-repeat;
-height: auto;
-border: 0.5px solid;
-border-color: black;
+  background-image: url('../landingPageImg/mountainview_markus_spiske.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  border: 0.5px solid black;
 }
 
 /*Section 2*/
@@ -159,6 +158,10 @@ align-items: stretch;
   height: 785px;
 }
 
+.info h2 {
+  padding-left: 5px;
+}
+
 .h5Flex {
   display: flex;
   justify-content: space-between;
@@ -232,21 +235,6 @@ padding: 45px;
   width: 455px; 
   height: 432px; 
   object-fit: cover;
-}
-
-/*Add to basket element over each product image*/
-.addToCartBtn {
-  display: flex;
-  justify-content: center;
-  width: 130px;
-  background-color: #0B0A08;
-  color: #FFFFFF;
-  border-radius: 20px;
-  padding-top: 5px;
-  position: absolute;
-  bottom: 167px;
-  right: 35px;
-  border: none;
 }
 
 /*Prize element for produce*/
