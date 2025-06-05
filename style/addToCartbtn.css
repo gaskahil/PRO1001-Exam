@@ -1,0 +1,14 @@
+/*Add to basket element over each product image*/
+.addToCartBtn {
+  display: flex;
+  justify-content: center;
+  width: 130px;
+  background-color: #0B0A08;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding-top: 5px;
+  position: absolute;
+  bottom: 167px;
+  right: 35px;
+  border: none;
+}

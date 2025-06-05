@@ -6,8 +6,10 @@
         <title>homedelivery from your local farms</title>
         <link rel="stylesheet" href="style/visuals.css">
         <link rel="stylesheet" href="style/nav.css">
-        <!--icons for menu-->
+        <link rel="stylesheet" href="style/chatStyle.css">
+        <!--icons-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_upward" />
         <!--fonts for the project-->
         <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -28,7 +30,7 @@
                         <hr class="menuBar">
                         <div class="menuChoice">
                             <a href="shop.html" class="menuOptions">PRODUCTS</a>
-                            <a href="" class="menuOptions">CHAT</a>
+                            <a href="#" class="menuOptions" id="chatMenuLink">CHAT</a>
                         </div><!--/menuChoice-->
                         <div class="bottomMenu">
                             <p>CHECKOUT</p>
@@ -56,16 +58,16 @@
         <div class="shop" id="shop">
             <h4>SHOP OUR SEASONAL<br>SELECTION</h4>
             <h6>Updated every week</h6>
-            <img src="landingPageImg/basketwithVegetables_nina_luong.jpg" alt="Basket with fresh vegetables" class="basket">
+            <img src="landingPageImg/basketwithVegetables_nina_luong.jpg" alt="Basket with fresh vegetables" class="basket" lazyload="lazy">
             <p>New produce is added continously as time<br>goes by and the seasons change.</p>
             <button class="browseBtn" id="browseBtn" onclick='window.location.href="shop.html"'>Browse our selection</button>
         </div> <!--/shop-->
         <div class="ask" id="ask">
             <h4>ASK US ABOUT<br>ANYTHING</h4>
             <h6>All your questions answered</h6>
-            <img src="landingPageImg/farmerinField_rebecca_ritchie.jpg" alt="Farmer in a field pointing towards the horizon" class="farmer">
+            <img src="landingPageImg/farmerinField_rebecca_ritchie.jpg" alt="Farmer in a field pointing towards the horizon" class="farmer" lazyload="lazy">
             <p>New produce is added continously as time<br>goes by and the seasons change.</p>
-            <button class="chatBtn" id="chatBtn" onclick='window.location.href="chat.html"'>Go to Chat</button>
+            <button class="chatBtn" id="chatBtn" type="button">Go to Chat</button>
         </div> <!--/ask-->
     </section><!--/options-->
     <!--Section 3 -->
@@ -99,7 +101,7 @@
         <h3>POPULAR PRODUCE</h3>
         <section class="popularOptions" id="popularOptions">
             <section id="product">
-                <img src="productPageImg/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg" alt="closeup picture of Oats" class="productImg" style="width: 455px; height: 432px; object-fit: cover;">
+                <img src="productPageImg/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg" alt="closeup picture of Oats" class="productImg" style="width: 455px; height: 432px; object-fit: cover;" lazyload="lazy">
                 <div id="prize">
                     <p>Oats</p>
                     <p>48 kr / kg</p>
@@ -107,7 +109,7 @@
                 <p>1 kg</p>
             </section><!--/product-->
             <section id="product">
-                <img src="productPageImg/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg" alt="closeup picture of Red Onions"class="productImg" style="width: 455px; height: 432px; object-fit: cover;">
+                <img src="productPageImg/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg" alt="closeup picture of Red Onions"class="productImg" style="width: 455px; height: 432px; object-fit: cover;" lazyload="lazy">
                 <div id="prize">
                     <p>Red Onions</p>
                     <p>48 kr / kg</p>
@@ -115,7 +117,7 @@
                 <p>0.5 kg</p>
             </section><!--/product-->
             <section id="product">
-                <img src="productPageImg/matthew-pilachowski-w1eAFyBLhLM-unsplash.jpg" alt="closeup picture of Garlic" class="productImg" style="width: 455px; height: 432px; object-fit: cover;">
+                <img src="productPageImg/matthew-pilachowski-w1eAFyBLhLM-unsplash.jpg" alt="closeup picture of Garlic" class="productImg" style="width: 455px; height: 432px; object-fit: cover;" lazyload="lazy">
                 <div id="prize">
                     <p>Garlic</p>
                     <p>48 kr / kg</p>
@@ -124,8 +126,6 @@
             </section><!--/garlic-->
         </section><!--/popularOptions-->
     </section><!--/popularProduce-->
-    <script src="script/mainJavascript.js"></script> 
-    </body>
     <footer>
         <h2 class="footerLogo">FRAM</h2>
         <hr class="footerLine">
@@ -153,4 +153,24 @@
         </form>
         </section><!--/join-->
     </footer>
+    <div class="chatbot-popup" id="chatbotPopup" style="display: none;">
+        <div class="chatbot-container">
+            <button class="close-chatbot" id="closeChatbotBtn" type="button">&times;</button>
+            <ul class="chatbox">
+                <li class="chat-incoming chatbot-message">
+                <h6 class="framBot">FRAM</h6>
+                <p>Hey! How can I assist you today?</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea></textarea>
+                <button class="chat-input-button" type="button">
+                    <span class="material-symbols-outlined">arrow_upward</span>
+                </button>
+            </div><!--/chat-input-->
+        </div><!--/chatbot-container-->
+    </div><!--/chatbot-popup-->
+    <script src="script/mainJavascript.js"></script>
+    <script src="script/chatbot.js"></script> 
+    </body>
 </html>
