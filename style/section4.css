@@ -1,0 +1,68 @@
+
+/*Section 4*/
+.popularProduce {
+  background: #FFFFFF;
+  padding-top: 90px;
+  margin-top: 10px;
+  color: #0B0A08;
+}
+
+/*Heading for section 4*/
+.h3Popular {
+  font-weight: 100;
+  display: flex;
+  padding-left: 45px;
+}
+
+/*Section element for different produce options*/
+.popularOptions {
+  padding: 45px;
+  padding-left: 30.5px;
+  display: flex;
+  padding-bottom: 90px;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .popularOptions {
+    overflow-y: scroll; 
+  }
+
+  .productImg {
+    max-width: 300px;
+    object-fit: cover;
+  }
+}
+
+/*Images for produce products*/
+.productImg {
+  border-radius: 30px;
+  padding: 14.5px;
+  width: 455px; 
+  height: 432px; 
+  object-fit: cover;
+}
+
+/*Prize element for produce*/
+.prize {
+  display: flex;
+  justify-content: space-between;
+  padding: 14.5px;
+  color:#0B0A08;
+}
+
+/*Setting color for the text + locking the images to allow buttons over*/
+.product {
+  color: #0B0A08;
+  position: relative;
+}
+
+.partnerFarmHeadline{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #0B0A08;
+  color:#0B0A08;
+  margin: auto;
+  width: 100%;
+  padding: 45px 0;
+}
